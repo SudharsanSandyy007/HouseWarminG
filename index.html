@@ -139,6 +139,7 @@
         box-sizing: border-box;
       }
 
+
       /* Fading animation */
       .fade {
         -webkit-animation-name: fade;
@@ -162,7 +163,7 @@
       .sendgift {
         font-family: "Shalimar", cursive;
         font-size: 20px;
-        font-weight: 900;
+        font-weight: 600;
         color: #e20026;
       }
 
@@ -290,6 +291,15 @@
       button[type="submit"]:hover {
         background-color: rgb(214, 226, 236);
       }
+      .row4{
+        background-image: url("noentry.png");
+        background-size: 70px;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 70px;
+        border-radius: 50px;
+      }
       #status {
         width: 90%;
         max-width: 500px;
@@ -299,11 +309,11 @@
         border-radius: 8px;
       }
       #status.success {
-        background-color: rgb(211, 250, 153);
+        background-color: rgb(45, 255, 185);
         animation: status 4s ease forwards;
       }
       #status.error {
-        background-color: rgb(250, 129, 92);
+        background-color: rgb(255, 27, 27);
         color: white;
         animation: status 4s ease forwards;
       }
@@ -321,6 +331,41 @@
           pointer-events: none;
         }
       }
+
+      @media only screen and (min-width: 600px) {
+        .row1{
+          background-color: #000000;
+          padding: 2%;
+        }
+        
+      .row2 {
+        background-image: url("invitation.jpeg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .row3 {
+        height: 750px;
+        width: 100%;
+        margin: 0;
+      }
+
+      
+      #demo {
+        position: relative;
+        top: 300px;
+        font-size: 50px;
+      }
+
+      .sendgift{
+        font-size: 50px;
+      }
+}
     </style>
   </head>
   <body>
@@ -336,8 +381,9 @@
                 style="transform: rotate(-35deg)"
               />
             </div>
-            <div>
+            <div class="eventname">
               <h1>
+                <center>
                 <span style="text-shadow: 2px 2px 8px #000000"> House </span>
                 <span style="color: #e20026; text-shadow: 2px 2px 8px #000000"
                   >Warming</span
@@ -345,6 +391,7 @@
                 <span style="color: #00f3e7; text-shadow: 2px 2px 8px #000000"
                   >Ceremony</span
                 >
+              </center>
               </h1>
             </div>
             <div>
@@ -362,14 +409,14 @@
         <div class="slideshow-container">
           <div class="mySlides fade">
             <div class="dummy">
-              <div class="numbertext">1 / 3</div>
+              <div class="numbertext">1 / 7</div>
               <img src="portiko (7).jpg" style="width: 100%" />
               <div class="text">P O R T I C O</div>
             </div>
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
+            <div class="numbertext">2 / 7</div>
             <div class="welcome">
               <img src="bview2 (1).jpg" style="width: 100%" />
               <div class="text">B E D R O O M</div>
@@ -377,31 +424,31 @@
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
+            <div class="numbertext">3 / 7</div>
             <img src="bview3 (1).jpg" style="width: 100%" />
             <div class="text">B E D R O O M</div>
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
+            <div class="numbertext">4 / 7</div>
             <img src="bview2 (4).jpg" style="width: 100%" />
             <div class="text">B E D R O O M</div>
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
+            <div class="numbertext">5 / 7</div>
             <img src="portiko (8).jpg" style="width: 100%" />
             <div class="text">P O R T I C O ( V2 )</div>
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
+            <div class="numbertext">6 / 7</div>
             <img src="hall.jpeg" style="width: 100%" />
             <div class="text">H A L L</div>
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
+            <div class="numbertext">7 / 7</div>
             <img src="kitchen (3).jpg" style="width: 100%" />
             <div class="text">K I T C H E N</div>
           </div>
@@ -457,13 +504,16 @@
               Gifts & Envelopes (MOI)
             </h1>
           </center>
+         
+            
+        
         </div>
         <div class="sendgift">
           Dear Frand, <br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You comming or not is
           secondary, sending gift is Mandatory! <br />
-          Make use of the upi id or Qr-code given below to send Moi or Gifts.
-          Thank You :)
+          Make use of the upi id or Qr-code given below to send Moi or Gifts!&nbsp;<img src="relax.png" height="20px" alt="">
+          Thank You :) 
         </div>
 
         <div class="qr" style="margin-top: 25px">
@@ -547,6 +597,49 @@
         ></iframe>
       </div>
 
+      <div class="sendwishes">
+        
+    <section>
+      <div class="container1">
+        <center><h2 style="font-family: Shalimar; color:rgb(251, 47, 81)", cursive;">S E N D &nbsp; W I S H E S</h2></center>
+        <form
+          action="https://formspree.io/f/mqkwrgne"
+          method="POST"
+          id="my-form"
+        >
+          <div class="form-group">
+            <label for="firstName"> First Name</label>
+            <input type="text" id="firstName" style="font-family: 'Jost', sans-serif;" name="firstName" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              style="font-family: 'Jost', sans-serif;"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            style="
+              background-color: aquamarine ;
+              color: white;
+              font-weight: 600;
+              font-family: 'Jost', sans-serif;
+            "
+          >
+            Send Wishes :)
+          </button>
+        </form>
+      </div>
+      <div id="status"></div>
+    </section>
+      </div>
+
       <div class="row6">
         <iframe
           width="100%"
@@ -576,7 +669,7 @@
             "
             >Created by:
           </b>
-          <a href="https://sqwebz.tech/" target="_blank">
+          <a href="https://sqwebz.tech/" style="text-decoration: none;" target="_blank">
             <i
               class="fab fa-stripe-s"
               style="color: #00ff80; font-size: 16px"
